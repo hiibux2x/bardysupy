@@ -1,0 +1,6 @@
+{
+  "name": "Bardysupy",
+  "description": "A high-end Glassmorphic Super App for food, drinks, and instant data/airtime top-ups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

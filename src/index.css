@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary-green: #2d6a4f;
+  --color-dark-green: #1b4332;
+  --color-mint: #d8f3dc;
+  --color-sage: #95d5b2;
+  --color-creamy-white: #f9fbf9;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-creamy-white);
+    color: var(--color-dark-green);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Moving organic blobs animation */
+@keyframes float1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -40px) scale(1.1); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 30px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.animate-float-1 {
+  animation: float1 15s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float2 18s ease-in-out infinite;
+}
+
+/* Glassmorphism glass card style */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
